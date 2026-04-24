@@ -1,123 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Andre' Resume</title>
-    <link rel="stylesheet" href="Resumestyle.css">
+  <title>Music Player</title>
+
+  <!-- jQuery (must come first) -->
+  <script src="https://code.jquery.com/jquery.min.js"></script>
+
+  <!-- Your JavaScript file -->
+  <script src="app.js"></script>
+
 </head>
+
 <body>
+<img src="opi/opi.jpg" alt="My Image">
+  <!-- Control Panel -->
+  <div id="cp">
+    <button id="play">Play</button>
+    <button id="stop">Stop</button>
+    <button id="pause">Pause</button>
+    <button id="mute">Mute</button>
+    <button id="unmute">Unmute</button>
+    <button id="volUp">Volume Up</button>
+    <button id="volDown">Volume Down</button>
+  </div>
 
-    <!-- HEADER -->
-    <div class="header">
-        <h1>Andre' Bowman</h1>
-        <p>Email: dbow872@gmail.com | Phone: (803) 372-7032</p>
-        <p>Columbia, SC | Computer Science Student</p>
-        <p>
-            <a href="https://facebook.com" target="_blank">Facebook</a> |
-            <a href="https://twitter.com" target="_blank">Twitter</a> |
-            <a href="https://github.com" target="_blank">GitHub</a> |
-            <a href="https://yourblog.example.com" target="_blank">Personal Blog</a>
-        </p>
+  <!-- Message display -->
+  <div id="message">Ready</div>
 
-        <div class="photo">
-            <img src="img/img.jpg" alt="Andre' Photo">
-        </div>
-    </div>
-
-    <!-- MAIN AREA: LEFT NAV + BODY + RIGHT NAV -->
-    <div class="main">
-
-        <div class="left-nav">
-            <h3>Navigation</h3>
-            <ul>
-                <li>Objective</li>
-                <li>Education</li>
-                <li>Skills</li>
-                <li>Courses</li>
-                <li>Experience</li>
-                <li>Activities</li>
-            </ul>
-        </div>
-
-        <div class="body-area">
-
-            <h2>Objective</h2>
-            <p>
-                Motivated computer science student seeking opportunities to apply programming,
-                problem-solving, and web development skills to real-world projects.
-            </p>
-
-            <h2>Education</h2>
-            <p><strong>Benedict College</strong> – B.S. in Computer Science</p>
-            <p>Expected Graduation: May 2028</p>
-
-            <h2>Skills</h2>
-            <ul>
-                <li><strong>Programming:</strong> C++, Python, HTML/CSS</li>
-                <li><strong>Web:</strong> Basic front-end development, debugging, file structure management</li>
-                <li><strong>Other:</strong> Problem-solving, teamwork, written communication</li>
-            </ul>
-
-            <h2>Courses Taken</h2>
-            <table>
-                <tr>
-                    <th>Course Code</th>
-                    <th>Course Title</th>
-                    <th>Semester</th>
-                </tr>
-                <tr>
-                    <td>CSCI 101</td>
-                    <td>Introduction to Computer Science</td>
-                    <td>Fall 2024</td>
-                </tr>
-                <tr>
-                    <td>CSCI 120</td>
-                    <td>Programming I (C++)</td>
-                    <td>Spring 2025</td>
-                </tr>
-                <tr>
-                    <td>MATH 141</td>
-                    <td>Calculus I</td>
-                    <td>Spring 2025</td>
-                </tr>
-                <tr>
-                    <td>CSCI 201</td>
-                    <td>Web Development Fundamentals</td>
-                    <td>Fall 2025</td>
-                </tr>
-            </table>
-
-            <h2>Experience</h2>
-            <h3>Student Projects</h3>
-            <ul>
-                <li><strong>Loop Logic Practice Tool:</strong> Built C++ programs to explore loops, conditionals, and debugging techniques.</li>
-                <li><strong>Personal Website:</strong> Created a basic multi-page site using HTML and CSS, focusing on structure and navigation.</li>
-            </ul>
-
-            <h2>Activities & Interests</h2>
-            <ol>
-                <li>Participating in coding challenges and online problem sets</li>
-                <li>Exploring web development and game scripting</li>
-                <li>Reading about technology, history, and science</li>
-            </ol>
-
-        </div>
-
-        <div class="right-nav">
-            <h3>Quick Links</h3>
-            <ul>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">GitHub Projects</a></li>
-                <li><a href="#">Blog Posts</a></li>
-            </ul>
-        </div>
-
-    </div>
-
-    <!-- FOOTER -->
-    <div class="footer">
-        <p>© 2026 Andre' Bowman — Resume Project</p>
-    </div>
+  <!-- Audio Player -->
+  <audio id="player">
+    <source src="music/Song1.mp3" type="audio/mpeg">
+  </audio>
 
 </body>
 </html>
