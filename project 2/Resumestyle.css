@@ -1,0 +1,90 @@
+/* Background image for entire page */
+body {
+    background-image: url("img/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 60px 0;
+}
+
+/* Shared box styling */
+.header, .left-nav, .body-area, .right-nav, .footer {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 10px;
+}
+
+/* Header */
+.header {
+    padding: 50px;
+    position: relative;
+    text-align: center;
+}
+
+/* Photo */
+.photo {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+
+.photo img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #333;
+}
+
+/* Main layout: 3 columns */
+.main {
+    display: flex;
+    gap: 10px;
+}
+
+/* Left and right nav */
+.left-nav, .right-nav {
+    width: 20%;
+    padding: 10px;
+}
+
+/* Body area */
+.body-area {
+    width: 60%;
+    padding: 10px;
+}
+
+/* Footer */
+.footer {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px;
+}
+
+table, th, td {
+    border: 1px solid #999;
+}
+
+th, td {
+    padding: 6px 8px;
+}
+
+th {
+    background-color: #e0e6f0;
+}
+
+/* Links */
+a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
